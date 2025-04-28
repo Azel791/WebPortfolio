@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <center class="nav">
+    <div class="nav">
+
+        <ul class="navList">
+            <li><a href="homepage.html" target="bodyFrame">Homepage</a>
+            <li><a href="about/about.html" target="bodyFrame">About</a></li>
+            <li><a href="projects/project.html" target="bodyFrame">Projects</a></li>
+            <li><a href="quizzes/quiz.html" target="bodyFrame">Quizzes</a></li>
+        </ul>
+
+    </div>
+    </center>
+
+    <center class="mobNav">
+        <div class="mobNav">
+            <h1 id="pageName">Homepage</h1>
+            <button class="dropDown">
+                <img src="images/icons/bars.svg" alt="Navigation"><p></p>
+            </button>
+            <div class="mobNavList">
+                <a href="homepage.html" target="bodyFrame" id="home">Homepage</a>
+                <a href="about/about.html" target="bodyFrame" id="about">About</a>
+                <a href="projects/project.html" target="bodyFrame" id="proj">Projects</a>
+                <a href="quizzes/quiz.html" target="bodyFrame" id="quiz">Quizzes</a>
+            </div>
+        </div>
+        </center>
+
+
+        <iframe src="homepage.html" frameborder="0" name="bodyFrame" id="iframe" onload="autoResize()"></iframe>
+
+
+    <div class="foot">
+        
+    </div>
+
+    <script type="application/javascript" src="script.js">
+        
+    </script>
+</body>
+</html>

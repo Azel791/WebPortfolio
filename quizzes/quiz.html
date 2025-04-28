@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizStyle.css">
+    <script src="jquery/jquery-3.7.1.js"></script>
+    
+</head>
+<body>
+    <fieldset class="midterms semesters">
+        <legend class="title"><center>Midterms</center></legend>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 1</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 1</h1>
+            <h1 class="score">14/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 2</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 2</h1>
+            <h1 class="score">18/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 3</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 3</h1>
+            <h1 class="score">15/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 4</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 4</h1>
+            <h1 class="score">16/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 5</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 5</h1>
+            <h1 class="score">18/20</h1>
+        </div>
+        <div class="longQuiz1 quiz">
+            <h1>Long Quiz</h1>
+            <h1 class="score">23/40</h1>
+        </div>
+        <div class="exam quiz">
+            <h1 class="examT">Midterms Exam</h1>
+            <h1 class="score">45/70</h1>
+        </div>
+    </fieldset>
+
+    
+    <fieldset class="finals semesters">
+        <legend class="title"><center>Finals</center></legend>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 1</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 1</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 2</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 2</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 3</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 3</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 4</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 4</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Pre-Test 5</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="quiz1 quiz">
+            <h1>Post-Test 5</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="longQuiz1 quiz">
+            <h1>Long Quiz</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+        <div class="exam quiz">
+            <h1 class="examT">Midterms Exam</h1>
+            <h1 class="score">?/20</h1>
+        </div>
+    </fieldset>
+
+    <script language="javascript">
+        function resize(){
+            parent.autoResize($(this).content().height());
+        }
+        $(window).on('resize',resize);
+    </script>
+
+</body>
+</html>

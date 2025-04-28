@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: white;
+            width: max-content;
+            height: auto;
+            display: block;
+        }
+
+        div.logo{
+            width: 1420px;
+            height: fit-content;
+            position: relative;
+        }
+
+        div.upperBtn{
+            width: 1420px;
+            height: 10px;
+            position: absolute;
+            display: inline-flex;
+        }
+
+        /* button of 'shop now'*/
+        div.shop{
+            display: inline;
+            position: relative;
+            margin: 70px 0px 0px 100px;
+            background-color: black;
+            border: 2px solid white;
+            height: 20px;
+            width: 85px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        div.shop > h3{
+            margin: 0;
+        }
+        div.shop > h3 > a{
+            text-decoration: none;
+            color: white;
+        }
+
+        /*Button for the 'cart'*/
+        div.cart{
+            position: relative;
+            display: inline;
+            margin: 70px 0px 0px 10px;/*
+            background-color: black;
+            border: 2px solid black;*/
+            height: 40px;
+            width: 40px;
+            border-radius: 7px;
+        }
+        div.cart > h3{
+            margin: 0;
+        }
+        div.cart > h3 > a{
+            text-decoration: none;
+            color: white;
+        }div.cart img{
+            margin: 5% 0% 0% 5% ;
+            width: 90%;
+            height: auto;
+        }
+
+
+        /*Button for the 'search'*/
+        div.search{
+            position: relative;
+            display: inline;
+            margin: 70px 0px 0px 10px;/*
+            background-color: black;
+            border: 2px solid black;*/
+            height: 40px;
+            width: 40px;
+            border-radius: 7px;
+        }
+        div.search > h3{
+            margin: 0;
+        }
+        div.search > h3 > a{
+            text-decoration: none;
+            color: white;
+        }div.search img{
+            margin: 5% 0% 0% 5% ;
+            width: 90%;
+            height: auto;
+        }
+
+
+        /*Content
+        div.content{
+            position: absolute;
+            border: 5px solid red;
+            height: 500px;
+            padding: 100px;
+
+        }*/
+        div.content{
+            width: 1340px;
+            height: auto;
+            margin-top: 100px;
+            position: absolute;
+            display: inline-flex;
+            padding: 40px;
+            justify-content: center;
+        }
+        div.contain{
+            border: 5px solid black;
+            width: 400px;
+            height: auto;
+            justify-items: center;
+            border-radius: 10px;
+        }
+
+        div.contain img{
+            width: 400px;
+            height: auto;
+            margin: 0px -5px 0px -5px;
+            border: 5px solid black;
+        }
+
+        div.content_view{
+            background-color: black;
+            border: 2px solid white;
+            height: 20px;
+            width: 220px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        div.content_view > h3{
+            margin: 0;
+            text-align: center;
+        }
+        div.content_view > h3 > a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        /* men button*/
+        div.contain2{
+            border: 5px solid black;
+            width: 400px;
+            height: auto;
+            justify-items: center;
+            border-radius: 10px;
+        }
+
+        div.contain2 img{
+            width: 400px;
+            height: auto;
+            margin: 0px -5px 0px -5px;
+            border: 5px solid black;
+        }
+
+        div.content_view2{
+            background-color: black;
+            border: 2px solid white;
+            height: 20px;
+            width: 220px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        div.content_view2 > h3{
+            margin: 0;
+            text-align: center;
+        }
+        div.content_view2 > h3 > a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        /* women button*/
+        div.contain3{
+            border: 5px solid black;
+            width: 400px;
+            height: auto;
+            justify-items: center;
+            border-radius: 10px;
+        }
+
+        div.contain3 img{
+            width: 400px;
+            height: auto;
+            margin: 0px -5px 0px -5px;
+            border: 5px solid black;
+        }
+
+        div.content_view3{
+            background-color: black;
+            border: 2px solid white;
+            height: 20px;
+            width: 220px;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        div.content_view3 > h3{
+            margin: 0;
+            text-align: center;
+        }
+        div.content_view3 > h3 > a{
+            text-decoration: none;
+            color: white;
+        }
+
+        div.con{
+            margin: 10px;
+        }
+
+        @media (max-width:420px) {
+            body{
+                
+                margin-left: 0;
+            }
+            div.logo{
+                margin: 0;
+                width: 412px;
+                padding: 0px;
+                position: relative;
+            }
+            div.logo img{
+                margin: 0px;
+                width:400px;
+                height: auto;
+            }
+
+            div.upperBtn{
+                position: relative;
+                width: 412px;
+                height: auto;
+                padding: 0%;
+            }
+            div.upperBtn div{
+                margin: 10px 10px 10px 20px;
+            }
+            div.upperBtn div.cart{
+                margin-left: 150px;
+            }
+
+            div.content{
+                margin-top: 0px;
+                position: relative;
+                width: fit-content;
+                height: auto;
+                display: block;
+                padding-left: 30px;
+                
+            }
+            div.con{
+                width: 350px;
+                height: auto;
+                margin: 10px 0px 10px 0px;
+            }
+            div.con img{
+                width: 300px;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo" >
+        <center><img src="Pics/logo.png" alt="Gymbro" class="logo"></center>
+    </div>
+    <div class="upperBtn">
+        <div class="shop" ><h3><a href="#">Shop Now</a></h3></div>
+        <div class="cart" ><h3><a href="#"><img src="Pics/cart.png"></a></h3></div>
+        <div class="search" ><h3><a href="#"><img src="Pics/search.png"></a></h3></div>
+    
+    </div>
+    <div class="content">
+        <div class="contain con">
+            <h3 style="text-align: center; font-size: 50px; margin: 0px;">Accesories</h3>
+            <img src="Pics/Accessories.png" alt="accessories">
+            <div class="content_view"><h3><a href="#">View Colletion</a></h3></div>
+        </div>
+
+        <div class="contain2 con">
+            <h3 style="text-align: center; font-size: 50px; margin: 0px;">Men</h3>
+            <img src="Pics/Accessories.png" alt="Men">
+            <div class="content_view2"><h3><a href="#">View Colletion</a></h3></div>
+        </div>
+
+        <div class="contain3 con">
+            <h3 style="text-align: center; font-size: 50px; margin: 0px;">Women</h3>
+            <img src="Pics/Accessories.png" alt="Men">
+            <div class="content_view3"><h3><a href="#">View Colletion</a></h3></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Navbar</title>
+    <style>
+        body {
+            background-color: darkgrey;
+            background-image: url("background.png");
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            max-width: 950px;
+            background: transparent;
+            padding: 0px 0;
+           
+            z-index: 1000;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, transparent, rgb(207, 253, 255), transparent) 1;
+        }
+
+        .navbar ul li {
+            position: relative;
+            flex: 1;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+           
+            background: linear-gradient(135deg, rgba(0, 175, 239, 0.24) 0%, rgba(0, 0, 0, 0.534) 100%);
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        }
+
+        .navbar ul li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+           
+        }
+
+        .navbar ul li a:hover {
+            color: #00AEEF;
+        }
+
+        .navbar ul li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -5px;
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+            transform: skewX(-30deg);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 80px;
+        }
+
+        .main-container {
+    width: 90%; /* Adjusts width dynamically */
+    max-width: 1450px; /* Prevents it from exceeding 1450px */
+    background-color: gray;/* originally white*/
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    min-height: 90vh;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%; /* Make it take more space on smaller screens */
+        padding: 30px; /* Reduce padding for better fit */
+    }
+}
+
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+            .navbar ul li {
+                width: 100%;
+                text-align: left;
+                clip-path: none;
+            }
+            .navbar ul li:not(:last-child)::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="apparel.html" target="apparel">Apparel</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main-container"><!--
+            <h1>Title</h1>
+            <p>This is your main content area.</p>-->
+
+            <iframe src="apparel.html" name="apparel" class="mainframe" id="mainframe" frameborder="0" style="width: 1450px; min-height: 1000px; height: auto;"></iframe>
+
+
+        </div>
+    </div>
+</body>
+</html>

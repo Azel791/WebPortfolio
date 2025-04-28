@@ -1,0 +1,69 @@
+body{
+    background-color:rgb(144, 213, 255);
+    /*overflow: -moz-hidden-unscrollable;
+    overflow: hidden;*/
+    min-height: 120vh;
+    padding: 80px 0px;
+}
+
+.title{
+    font-size: 4em;
+    margin: 0px auto;
+    right: 50%;
+    background-color: rgb(81, 120, 145);
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid black;
+}
+.semesters{
+    background-color: rgb(87, 185, 255);
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+    /*border: 5px solid black;*/
+}
+
+.quiz{
+    display: inline-flex;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 99%;
+    height: 40px;
+}
+.quiz h1{
+    margin: 0px 0px 0px 10px;
+}
+.longQuiz1 , .exam{
+    grid-column: 1 / 3;
+    width: auto;
+}
+h1.score{
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    margin: 0px 40px 0px auto;
+    right: 0px;
+}
+@media (max-width:420px ) {
+    .semesters{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        border: 5px solid black;
+    }
+    
+    .longQuiz1 , .exam{
+        grid-column: 1 / span 1;
+    }
+    .exam{
+        justify-content: center;
+        align-items: center;
+    }
+    .exam h1.examT{
+        margin-left: 5px;
+        font-size: 1.7em;
+    }
+}
