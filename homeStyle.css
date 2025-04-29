@@ -3,7 +3,8 @@ body{
     /*overflow: -moz-hidden-unscrollable;
     overflow: hidden;*/
     min-height: 800px;
-    padding: 80px 10px;
+    height: 100vh;
+    padding: 80px 0px 0px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -103,6 +104,40 @@ fieldset p{
     font-size: 20px;
 }
 
+/*Footer css*/
+div.foot img{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+div.foot div.footlink{
+    display: inline-flex;
+    flex-direction: row;
+    width: 250px;
+    height: 50px;
+    margin: 10px 20px;
+}
+div.foot a{
+    margin: 0px 0px 0px 50px;
+    align-self: center;
+    text-align: start;
+    width: auto;
+    height: auto;
+    
+}
+div.foot{
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(81, 120, 145);
+    width: 100%;
+    min-height: 100px;
+    margin: auto 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+
 
 @media screen and (max-width:690px) {
     
@@ -133,3 +168,10 @@ fieldset{
     width: 100vw;
 }
 }
+
+@media screen and (max-width:500px) {
+     
+    div.foot{
+        flex-direction: column;
+    }   
+    }

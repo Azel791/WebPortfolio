@@ -3,7 +3,7 @@ body{
     /*overflow: -moz-hidden-unscrollable;
     overflow: hidden;*/
     min-height: 800px;
-    padding: 80px 0px;
+    padding: 80px 0px 0px 0px;
 }
 
 div.basicInf fieldset{
@@ -55,12 +55,55 @@ fieldset{
 }
 
 
-@media (max-width:400px) {
+/*Footer css*/
+div#foot img{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+div#foot div#footlink{
+    display: inline-flex;
+    flex-direction: row;
+    width: 250px;
+    height: 50px;
+    margin: 10px 20px;
+}
+div#foot a{
+    margin: 0px 0px 0px 50px;
+    align-self: center;
+    text-align: start;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 0px 0px;
+    text-decoration: none;
+    border-radius: 0;
+    background-color: transparent;
+    transition: none;
+    color: black;
+}
+div#foot a:hover{
+    transform: none;
+}
+div#foot{
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(81, 120, 145);
+    width: 100%;
+    min-height: 100px;
+    margin: auto 0px 0px 0px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media (max-width:420px) {
 
     body{
         padding-right: 5vw;
         overflow: none;
-        width: 60%;
+        width: 100%;
     }
     /*
     div{
@@ -103,6 +146,12 @@ fieldset{
     }
     div.educAtt legend{
         font-size: 2em;
+    }
+    @media screen and (max-width:500px) {
+     
+    div#foot{
+        flex-direction: column;
+    }   
     }
 }
 
