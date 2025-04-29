@@ -144,13 +144,14 @@ div.mobNav  img{
     animation-duration: 1s;
 }
 div.mobNavList{
+    margin-left: 0;
     backdrop-filter: blur(5px);
     margin: 0 auto; 
     overflow: hidden;
     display: none;
     position: absolute;
     /*background-color: transparent;
-    */width: 90vw;
+    */width: 100vw;
     height: 200px;
     z-index: 3;
 }
