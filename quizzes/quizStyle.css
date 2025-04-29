@@ -26,6 +26,8 @@ body{
 }
 
 .quiz{
+    color: black;
+    text-decoration: none;
     display: inline-flex;
     border: 5px solid black;
     border-radius: 10px;
